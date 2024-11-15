@@ -5,6 +5,10 @@ import Login from "../pages/Login";
 import NotFound from "../pages/NotFound";
 import UserProfile from "../pages/UserProfile";
 import MainLayout from "../layouts/MainLayout";
+import Songs from "../pages/Songs";
+import Reproduction from "../pages/Reproduction";
+import Genres from "../pages/Genres";
+import Artists from "../pages/Artists";
 
 export const router = createBrowserRouter ([
     {
@@ -28,6 +32,22 @@ export const router = createBrowserRouter ([
             {
                 path:"/profile",
                 element: <UserProfile />
+            },
+            {
+                path:"/songs",
+                element: <Songs />
+            },
+            {
+                path:"/genres",
+                element: <Genres />
+            }
+            ,{
+                path:"/artists",
+                element: <Artists />
+            }
+            ,{
+                path:"/reproduction",
+                element: <Reproduction />
             }
         ]
 
